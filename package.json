@@ -1,0 +1,32 @@
+{
+  "name": "mcp-md-converter",
+  "version": "1.0.0",
+  "description": "MCP server: convert Markdown files to Google Docs and PDF",
+  "type": "module",
+  "main": "dist/main.js",
+  "bin": {
+    "mcp-md-converter": "dist/main.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "auth": "node dist/auth.js"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0",
+    "@nestjs/common": "^10.4.15",
+    "@nestjs/core": "^10.4.15",
+    "reflect-metadata": "^0.2.2",
+    "rxjs": "^7.8.1",
+    "googleapis": "^144.0.0",
+    "markdown-it": "^14.1.0",
+    "puppeteer": "^23.9.0",
+    "zod": "^3.23.8",
+    "open": "^10.1.0"
+  },
+  "devDependencies": {
+    "@types/markdown-it": "^14.1.2",
+    "@types/node": "^22.9.0",
+    "typescript": "^5.6.3"
+  }
+}
